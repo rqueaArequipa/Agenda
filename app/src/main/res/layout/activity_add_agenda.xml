@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddAgenda">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/img_4"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lblTitleEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:layout_marginTop="10sp"
+                android:paddingVertical="15sp"
+                android:text="@string/title_agenda" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:paddingVertical="6sp"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/txtname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="textPersonName"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingVertical="8sp"
+                android:background="@drawable/input"
+                android:hint="@string/name_hit"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingVertical="6sp"
+                android:textColor="@color/white"
+                android:text="@string/email" />
+
+            <EditText
+                android:id="@+id/txtmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="textEmailAddress"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingVertical="8sp"
+                android:background="@drawable/input"
+                android:hint="@string/example_email"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingVertical="6sp"
+                android:textColor="@color/white"
+                android:text="@string/phone" />
+
+            <EditText
+                android:id="@+id/txtphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:inputType="number"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingVertical="8sp"
+                android:background="@drawable/input"
+                android:hint="@string/cel"
+                android:textSize="18sp"
+                tools:ignore="TextFields" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingVertical="6sp"
+                android:textColor="@color/white"
+                android:text="@string/remarks" />
+
+            <EditText
+                android:id="@+id/txtremarks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="@drawable/input"
+                android:inputType="textMultiLine"
+                android:paddingVertical="20sp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnAddAgenda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10sp"
+                android:backgroundTint="@color/btn"
+                android:text="@string/add_new_agenda" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

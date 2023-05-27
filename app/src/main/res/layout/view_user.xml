@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="16sp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16sp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/img_8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/label"
+                    android:textStyle="bold"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/lblEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"
+                    android:text="@string/email"
+                    android:textColor="@color/txt"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/lblPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="20sp"
+                    android:textColor="@color/txt"
+                    android:textSize="16sp"
+                    android:textStyle="normal"
+                    android:text="@string/phone" />
+
+                <TextView
+                    android:id="@+id/lblRemarks"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/txt"
+                    android:text="@string/remarks" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="6sp"
+            android:layout_marginEnd="6sp"
+            android:layout_toStartOf="@+id/btnDelete"
+            android:background="@android:color/transparent"
+            app:srcCompat="@android:drawable/ic_menu_edit"
+            app:tint="#09CC02" />
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="3sp"
+            android:layout_marginTop="3sp"
+            app:srcCompat="@drawable/ic_delete_black_48dp"
+            android:background="@android:color/transparent"
+            app:tint="@android:color/holo_red_dark" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

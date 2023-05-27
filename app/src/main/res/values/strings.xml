@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Agenda</string>
+    <string name="my_diario">Mi Agenda</string>
+    <string name="add_agenda">Add Agenda</string>
+    <string name="title_agenda">Nueva Agenda</string>
+    <string name="name">Nombre</string>
+    <string name="email">Correo</string>
+    <string name="remarks">Observaciones</string>
+    <string name="phone">Telefono</string>
+    <string name="add_new_agenda">Agregar</string>
+    <string name="cel">999999999</string>
+    <string name="example_email">example@empresa.com</string>
+    <string name="name_hit">name</string>
+</resources>
